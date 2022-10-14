@@ -1,5 +1,3 @@
-from locale import normalize
-
 
 def is_palindrome(phrase):
     """Is phrase a palindrome?
