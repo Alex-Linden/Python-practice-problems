@@ -1,3 +1,6 @@
+from locale import normalize
+
+
 def is_palindrome(phrase):
     """Is phrase a palindrome?
 
@@ -21,3 +24,6 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    normalized = phrase.lower().replace(" ", "")
+
+    return normalized == normalized[::-1]
