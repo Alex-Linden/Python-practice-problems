@@ -17,13 +17,13 @@ def friend_date(a, b):
         True
     """
 
-    for hobby in a[2]:
-        if hobby in b[2]:
-            return True
-
-    return False
-
-    # if set(a[2]) & set(b[2]):
-    #     return True
+    # for hobby in a[2]:
+    #     if hobby in b[2]:
+    #         return True
 
     # return False
+
+    if set(a[2]) & set(b[2]):
+        return True
+
+    return False
