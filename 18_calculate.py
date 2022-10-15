@@ -1,6 +1,3 @@
-from distutils.log import error
-
-
 def calculate(operation, a, b, make_int=False, message='The result is'):
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
